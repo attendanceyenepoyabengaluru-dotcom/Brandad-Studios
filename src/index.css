@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #f97316;
+  --color-brand-orange-light: #fb923c;
+  --color-brand-orange-dark: #ea580c;
+  --color-brand-dark: #0a0a0a;
+  --color-brand-dark-gray: #171717;
+  
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--color-brand-dark);
+  color: white;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-brand-orange);
+  color: white;
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-orange);
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

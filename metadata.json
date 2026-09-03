@@ -1,0 +1,6 @@
+{
+  "name": "BrandAd Medias",
+  "description": "Premium 3D creative media agency website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
